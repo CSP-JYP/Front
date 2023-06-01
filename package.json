@@ -3,19 +3,34 @@
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "expo start",
+    "start": "expo start --tunnel",
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web"
   },
   "dependencies": {
+    "@benjeau/react-native-draw": "^0.8.3",
+    "@expo/ngrok": "^4.1.1",
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/stack": "^6.3.16",
+    "axios": "^1.4.0",
     "expo": "~48.0.15",
+    "expo-camera": "~13.2.1",
+    "expo-draw": "github:MarangoniEduardo/expo-draw",
     "expo-status-bar": "~1.4.4",
     "react": "18.2.0",
-    "react-native": "0.71.8"
+    "react-hook-form": "^7.44.2",
+    "react-native": "0.71.8",
+    "react-native-draw-on-screen": "^1.0.15",
+    "react-native-gesture-handler": "^2.10.2",
+    "react-native-signature-canvas": "^4.5.1",
+    "react-native-signature-capture": "^0.4.12",
+    "react-native-svg": "^13.9.0",
+    "rn-draw": "^0.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
   },
-  "private": true
+  "private": true,
+  "proxy": "http://localhost:8080"
 }
