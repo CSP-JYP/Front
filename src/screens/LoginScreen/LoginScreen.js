@@ -51,7 +51,7 @@ const LoginScreen = () => {
                 placeholder="Password"
                 control={control}
                 rules={{
-                    required: 'Password is required',
+                    required: 'Password를 입력해주세요',
                     minLength: { value: 8, message: '8자 이상 입력해주세요'}
                 }}
                 secureTextEntry
