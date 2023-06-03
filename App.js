@@ -13,6 +13,7 @@ import AddContractScreen from './src/screens/AddContractScreen/AddContractScreen
 import CheckFaceIdScreen from './src/screens/CheckFaceIdScreen/CheckFaceIdScreen';
 import SendContractScreen from './src/screens/SendContractScreen/SendContractScreen';
 import CheckSignScreen from './src/screens/CheckSignScreen/CheckSignScreen';
+import LoadingScreen from './src/screens/LoadingScreen/LoadingScreen';
 
 // 앱이 각 화면이 전환될 수 있는 기본 틀을 제공한다.
 const Stack = createStackNavigator();
@@ -34,6 +35,7 @@ const App = () => {
         <Stack.Screen name="CheckFaceId" component={CheckFaceIdScreen}/>
         <Stack.Screen name="SendContract" component={SendContractScreen}/>
         <Stack.Screen name="CheckSign" component={CheckSignScreen}/>
+        <Stack.Screen name="Loading" component={LoadingScreen}/>
       </Stack.Navigator>
     </NavigationContainer>
   )
