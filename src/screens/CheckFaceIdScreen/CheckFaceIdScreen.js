@@ -12,7 +12,7 @@ const CheckFaceIdScreen = () => {
   const [permission, setStartCamera] = React.useState(false)
   const [previewVisible, setPreviewVisible] = React.useState(false)
   const [capturedImage, setCapturedImage] = React.useState(null)
-  const [cameraType, setCameraType] = React.useState(Camera.Constants.Type.back)
+  const [cameraType, setCameraType] = React.useState(Camera.Constants.Type.front)
 
   const navigation = useNavigation();
 
@@ -33,7 +33,7 @@ const CheckFaceIdScreen = () => {
   }
   const savePhoto = () => {
     Alert.alert('Success!');
-    navigation.navigate('SendContract');
+    navigation.navigate('Loading');
     setCapturedImage(null)
     setPreviewVisible(false)
     startCamera()
